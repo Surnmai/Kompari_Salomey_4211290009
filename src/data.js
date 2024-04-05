@@ -1,0 +1,25 @@
+export const navlinks = [
+  { path: "/", text: "home" },
+  { path: "/about", text: "about" },
+  { path: "/resume", text: "resume" },
+  {
+    path: "/portfolio",
+    text: "portfolio",
+    // submenu: true,
+    sublink: [
+      { path: "/moodboard", text: "moodboard" },
+      { path: "/design-brief", text: "design brief" },
+      { path: "/flatssketches", text: "flat/sketches" },
+      { path: "/croquis", text: "croquis" },
+      { path: "/design-specification", text: "design specification" },
+      { path: "/fabric-board", text: "fabric board" },
+      { path: "/patterns", text: "patterns" },
+      { path: "/cutting-of-fabrics", text: "cutting of fabrics" },
+      { path: "/pictures-of-final-design", text: "pictures of final design" },
+      { path: "/textiles-works", text: "textiles works" },
+      { path: "/textiles-works", text: "textiles works" },
+      { path: "/embroidery-applique-works", text: "Embroidery/Applique works" },
+    ],
+  },
+  { path: "/contact", text: "contact" },
+];
