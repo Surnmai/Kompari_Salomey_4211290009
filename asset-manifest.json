@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a2dc26b.css",
-    "main.js": "/static/js/main.d2d9856a.js",
-    "static/media/logo.png": "/static/media/logo.17ee2bb35d298187f59d.png",
-    "static/media/hero-bg3.jpg": "/static/media/hero-bg3.464f2635491749ab30f9.jpg",
-    "index.html": "/index.html",
-    "main.9a2dc26b.css.map": "/static/css/main.9a2dc26b.css.map",
-    "main.d2d9856a.js.map": "/static/js/main.d2d9856a.js.map"
+    "main.css": "/Kompari_Salomey_4211290009/static/css/main.1184834b.css",
+    "main.js": "/Kompari_Salomey_4211290009/static/js/main.6b70af1c.js",
+    "static/media/logo.png": "/Kompari_Salomey_4211290009/static/media/logo.17ee2bb35d298187f59d.png",
+    "static/media/hero-bg3.jpg": "/Kompari_Salomey_4211290009/static/media/hero-bg3.464f2635491749ab30f9.jpg",
+    "index.html": "/Kompari_Salomey_4211290009/index.html",
+    "main.1184834b.css.map": "/Kompari_Salomey_4211290009/static/css/main.1184834b.css.map",
+    "main.6b70af1c.js.map": "/Kompari_Salomey_4211290009/static/js/main.6b70af1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a2dc26b.css",
-    "static/js/main.d2d9856a.js"
+    "static/css/main.1184834b.css",
+    "static/js/main.6b70af1c.js"
   ]
 }
