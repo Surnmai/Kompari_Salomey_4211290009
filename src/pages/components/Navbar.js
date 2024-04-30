@@ -27,7 +27,9 @@ const Navbar = () => {
       <>
         <header
           className={`${
-            bg ? "bg-black shadow-md shadow-slate-900 py-2 lg:py-4" : "bg-none"
+            bg
+              ? "bg-slate-800 shadow-md shadow-slate-900 py-[1rem] lg:py-2"
+              : "bg-none"
           } fixed w-full left-0 py-8 z-10 transition-all duration-200`}
         >
           <div className="container mx-auto flex justify-between items-center">

@@ -9,7 +9,7 @@ const Home = () => {
       <section className="">
         <Hero />
         <section className="section">
-          <p className="container mx-auto">
+          {/* <p className="container mx-auto">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
             laborum sequi eos, explicabo quas cupiditate, iure laboriosam eum
             voluptatibus soluta voluptate eligendi modi facere. Debitis alias
@@ -185,7 +185,7 @@ const Home = () => {
             soluta alias voluptatum illum, exercitationem culpa beatae
             aspernatur molestiae. Dicta, consequatur tempore ipsum eligendi eum
             eius esse itaque reprehenderit illum voluptatum?
-          </p>
+          </p> */}
         </section>
       </section>
     </>
