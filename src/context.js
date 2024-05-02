@@ -42,21 +42,6 @@ export const AppContextProvider = ({ children }) => {
   const menuRef = useRef(null);
   // console.log(menuRef.current);
 
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      // console.log(e.target);
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
-        closeMenuBar();
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [closeMenuBar, menuRef]);
-
   return (
     <AppContext.Provider
       value={{ bg, setBg, mobileNav, setMobileNav, closeMenuBar, menuRef }}

@@ -1,16 +1,16 @@
 import React from "react";
 
 // import Logo
-import Logo from "../../img/logo.png";
+import Logo from "../img/logo.png";
 
 // import data
-import { navlinks } from "../../data";
+import { navlinks } from "../data";
 
 // import icons
 import { FaBars, FaTimes } from "react-icons/fa";
 
 // import useGlobalContext
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../context";
 
 // import Link
 import { Link } from "react-router-dom";
@@ -34,7 +34,7 @@ const Navbar = () => {
         >
           <div className="container mx-auto flex justify-between items-center">
             {/* logo  */}
-            <Link onClick={() => closeMenuBar()} path={navlinks[0].text}>
+            <Link to={navlinks[0].path}>
               <img
                 src={Logo}
                 alt="Logo"
