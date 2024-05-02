@@ -1,7 +1,88 @@
 import React from "react";
 
+// import image
+import AboutImg from "../img/about.jpg";
+
 const About = () => {
-  return <div>About</div>;
+  return (
+    <>
+      <section className="section ">
+        <div className="container mx-auto flex flex-wrap">
+          {/* content  */}
+          <div className="flex-1 leading-5">
+            <p className="p-2">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam eos quam cum, in asperiores animi delectus pariatur
+              earum. Iste explicabo officiis est illum blanditiis ad laudantium
+              deserunt quo sint nemo. Quod non nihil deleniti culpa nostrum,
+              sequi cumque dolores porro fugit iusto at sed neque excepturi
+              rerum asperiores eaque quo perferendis delectus laudantium atque
+              quis nemo! Repellendus itaque neque dolor.
+            </p>
+            <p className="p-2">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam eos quam cum, in asperiores animi delectus pariatur
+              earum. Iste explicabo officiis est illum blanditiis ad laudantium
+              deserunt quo sint nemo. Quod non nihil deleniti culpa nostrum,
+              sequi cumque dolores porro fugit iusto at sed neque excepturi
+              rerum asperiores eaque quo perferendis delectus laudantium atque
+              quis nemo! Repellendus itaque neque dolor.
+            </p>
+            <p className="p-1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam eos quam cum, in asperiores animi delectus pariatur
+              earum. Iste explicabo officiis est illum blanditiis ad laudantium
+              deserunt quo sint nemo. Quod non nihil deleniti culpa nostrum,
+              sequi cumque dolores porro fugit iusto at sed neque excepturi
+              rerum asperiores eaque quo perferendis delectus laudantium atque
+              quis nemo! Repellendus itaque neque dolor.
+            </p>
+            <p className="p-1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam eos quam cum, in asperiores animi delectus pariatur
+              earum. Iste explicabo officiis est illum blanditiis ad laudantium
+              deserunt quo sint nemo. Quod non nihil deleniti culpa nostrum,
+              sequi cumque dolores porro fugit iusto at sed neque excepturi
+              rerum asperiores eaque quo perferendis delectus laudantium atque
+              quis nemo! Repellendus itaque neque dolor.
+            </p>
+            <p className="p-1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam eos quam cum, in asperiores animi delectus pariatur
+              earum. Iste explicabo officiis est illum blanditiis ad laudantium
+              deserunt quo sint nemo. Quod non nihil deleniti culpa nostrum,
+              sequi cumque dolores porro fugit iusto at sed neque excepturi
+              rerum asperiores eaque quo perferendis delectus laudantium atque
+              quis nemo! Repellendus itaque neque dolor.
+            </p>
+            <p className="p-1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam eos quam cum, in asperiores animi delectus pariatur
+              earum. Iste explicabo officiis est illum blanditiis ad laudantium
+              deserunt quo sint nemo. Quod non nihil deleniti culpa nostrum,
+              sequi cumque dolores porro fugit iusto at sed neque excepturi
+              rerum asperiores eaque quo perferendis delectus laudantium atque
+              quis nemo! Repellendus itaque neque dolor.
+            </p>
+            <p className="p-1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quibusdam eos quam cum, in asperiores animi delectus pariatur
+              earum. Iste explicabo officiis est illum blanditiis ad laudantium
+              deserunt quo sint nemo. Quod non nihil deleniti culpa nostrum,
+              sequi cumque dolores porro fugit iusto at sed neque excepturi
+              rerum asperiores eaque quo perferendis delectus laudantium atque
+              quis nemo! Repellendus itaque neque dolor.
+            </p>
+          </div>
+
+          {/* image  */}
+          <div className="flex-1">
+            <img src={AboutImg} alt="profile" className="w-full h-full" />
+          </div>
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default About;
