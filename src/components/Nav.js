@@ -42,28 +42,27 @@ const Nav = () => {
                 onMouseEnter={() => setHoveredLink(link.text)}
                 onMouseLeave={() => setHoveredLink(null)}
               >
-                <Link
-                  // onClick={() => closeMenuBar()}
-                  to={path}
-                  className="text-white cursor-pointer hover:underline"
-                >
-                  {text}
-
-                  {/* SubMenu / Dropdown */}
-                  {/* If the sublink property exist in the LINK object then compare the values of the HOVEREDLINK State and that of TEXT from the LINK object when hovered over, if both are true then show the dropdown */}
-                  {sublink && hoveredLink === text && (
-                    <ul className="absolute top-18 right-28 pt-1 bg-[#000] shadow-md shadow-slate-950 w-[15%]">
-                      {sublink.map((sub, index) => {
-                        const { text, path } = sub;
-                        return (
-                          <li key={index} className="py-1 px-5 hover:underline">
-                            <Link to={path}>{text}</Link>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  )}
-                </Link>
+                {sublink ? (
+                  <span className="text-white cursor-pointer">{text}</span>
+                ) : (
+                  <Link className="text-white" to={path}>
+                    {text}
+                  </Link>
+                )}
+                {sublink && hoveredLink === text && (
+                  <ul className="absolute top-18 right-28 pt-1 bg-[#000] shadow-md shadow-slate-950 w-[15%]">
+                    {sublink.map((sub, index) => {
+                      const { text, path } = sub;
+                      return (
+                        <li key={index} className="py-1 px-5 hover:underline">
+                          <Link className="text-white" to={path}>
+                            {text}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
               </li>
             );
           })}

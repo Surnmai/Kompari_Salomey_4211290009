@@ -37,27 +37,30 @@ const Navmobile = () => {
                 key={index}
                 onClick={() => setHoveredLink(link.text)}
                 // onMouseLeave={() => setHoveredLink(null)}
-                className="border-b m-1"
+                className="border-b m-1 cursor-pointer capitalize font-medium"
               >
-                <Link
-                  to={path}
-                  className="cursor-pointer capitalize font-medium text-[#000]"
-                >
-                  {text}
-
-                  {sublink && hoveredLink === text && (
-                    <ul className="">
-                      {sublink.map((sub, index) => {
-                        const { text, path } = sub;
-                        return (
-                          <li key={index} className="px-4 py-1 border-b">
-                            <Link to={path}>{text}</Link>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  )}
-                </Link>
+                {sublink ? (
+                  <span className="text-[#000] cursor-pointer">{text}</span>
+                ) : (
+                  <Link className="text-[#000]" to={path}>
+                    {" "}
+                    {text}
+                  </Link>
+                )}
+                {sublink && hoveredLink === text && (
+                  <ul className="">
+                    {sublink.map((sub, index) => {
+                      const { text, path } = sub;
+                      return (
+                        <li key={index} className="px-4 py-1 border-b">
+                          <Link className="text-[#000]" to={path}>
+                            {text}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
               </li>
             );
           })}
