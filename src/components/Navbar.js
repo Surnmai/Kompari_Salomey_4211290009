@@ -25,13 +25,7 @@ const Navbar = () => {
   return (
     <>
       <>
-        <header
-          className={`${
-            bg
-              ? "bg-slate-800 shadow-md shadow-slate-900 py-[1rem] lg:py-2"
-              : "bg-none"
-          } fixed w-full left-0 py-8 z-10 transition-all duration-200`}
-        >
+        <header className="bg-[#000000] shadow-md  fixed w-full left-0 py-4 z-10 transition-all duration-200">
           <div className="container mx-auto flex justify-between items-center">
             {/* logo  */}
             <Link to={navlinks[0].path}>

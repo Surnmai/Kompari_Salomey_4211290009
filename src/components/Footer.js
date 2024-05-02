@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer className="py-5 bg-slate-800 text-white">
+      <footer className="py-5 bg-[#000] text-white">
         <div className="container mx-auto ">
           <div className="md:flex md:items-center md:justify-between border-b bg-opacity-75 border-gray-500 pb-7">
             {/* index number  */}

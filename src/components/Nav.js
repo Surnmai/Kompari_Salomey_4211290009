@@ -52,7 +52,7 @@ const Nav = () => {
                   {/* SubMenu / Dropdown */}
                   {/* If the sublink property exist in the LINK object then compare the values of the HOVEREDLINK State and that of TEXT from the LINK object when hovered over, if both are true then show the dropdown */}
                   {sublink && hoveredLink === text && (
-                    <ul className="absolute top-18 right-44 pt-1 bg-slate-800 w-[15%]">
+                    <ul className="absolute top-18 right-28 pt-1 bg-[#000] w-[15%]">
                       {sublink.map((sub, index) => {
                         const { text, path } = sub;
                         return (

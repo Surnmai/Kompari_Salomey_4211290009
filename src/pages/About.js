@@ -7,9 +7,9 @@ const About = () => {
   return (
     <>
       <section className="section ">
-        <div className="container mx-auto flex flex-wrap">
+        <div className="container mx-auto md:flex flex-wrap gap-8">
           {/* content  */}
-          <div className="flex-1 leading-5">
+          <div className="flex-1 leading-5 text-justify ">
             <p className="p-2">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Quibusdam eos quam cum, in asperiores animi delectus pariatur

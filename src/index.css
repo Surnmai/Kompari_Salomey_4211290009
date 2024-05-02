@@ -19,6 +19,6 @@
     @apply font-fira overflow-x-hidden scroll-smooth;
   }
   .section {
-    @apply py-[2rem] lg:py-[9%];
+    @apply py-[5rem] lg:py-[9%];
   }
 }

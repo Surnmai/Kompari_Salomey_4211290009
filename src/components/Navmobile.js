@@ -26,9 +26,9 @@ const Navmobile = () => {
       <nav
         className={`${
           mobileNav ? "left-0" : "-left-full"
-        }  md:hidden fixed bottom-0 top-0 w-full max-w-xs h-screen transition-all bg-slate-800 shadow-xl shadow-slate-500 z-50`}
+        }  md:hidden fixed bottom-0 top-0 w-full max-w-xs h-screen transition-all bg-[#fff] shadow-xl shadow-slate-900 z-50`}
       >
-        <ul className="w-full h-full flex flex-col px-4 pt-8 gap-y-2">
+        <ul className="w-full h-full flex flex-col px-4 pt-8 gap-y-2 overflow-y-scroll">
           {navlinks.map((link, index) => {
             const { path, text, sublink } = link;
 
@@ -41,7 +41,7 @@ const Navmobile = () => {
               >
                 <Link
                   to={path}
-                  className="cursor-pointer capitalize font-medium text-white "
+                  className="cursor-pointer capitalize font-medium text-[#000]"
                 >
                   {text}
 
@@ -50,7 +50,7 @@ const Navmobile = () => {
                       {sublink.map((sub, index) => {
                         const { text, path } = sub;
                         return (
-                          <li key={index} className="px-4 py-1">
+                          <li key={index} className="px-4 py-1 border-b">
                             <Link to={path}>{text}</Link>
                           </li>
                         );
