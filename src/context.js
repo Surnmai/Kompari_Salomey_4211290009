@@ -42,9 +42,19 @@ export const AppContextProvider = ({ children }) => {
   const menuRef = useRef(null);
   // console.log(menuRef.current);
 
+  const portfolioRef = useRef(null); // Ref for the portfolio dropdown trigger
+
   return (
     <AppContext.Provider
-      value={{ bg, setBg, mobileNav, setMobileNav, closeMenuBar, menuRef }}
+      value={{
+        bg,
+        setBg,
+        mobileNav,
+        setMobileNav,
+        closeMenuBar,
+        menuRef,
+        portfolioRef,
+      }}
     >
       {children}
     </AppContext.Provider>

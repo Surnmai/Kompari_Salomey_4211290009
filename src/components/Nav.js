@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 
 const Nav = () => {
-  const { closeMenuBar, menuRef } = useGlobalContext();
+  const { closeMenuBar, menuRef, portfolioRef } = useGlobalContext();
 
   // State to manage hover status
   const [hoveredLink, setHoveredLink] = useState(null);
@@ -17,7 +17,19 @@ const Nav = () => {
   useEffect(() => {
     const handleClickOutside = (e) => {
       // console.log(e.target);
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
+      // if (
+      //   menuRef.current &&
+      //   !menuRef.current.contains(e.target) &&
+      //   !(portfolioRef.current && portfolioRef.current.contains(e.target))
+      // ) {
+      //   closeMenuBar();
+      // }
+
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        !(portfolioRef.current && portfolioRef.current.contains(e.target))
+      ) {
         closeMenuBar();
       }
     };
@@ -27,7 +39,7 @@ const Nav = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [closeMenuBar, menuRef]);
+  }, [closeMenuBar, menuRef, portfolioRef]);
 
   return (
     <>
@@ -41,6 +53,8 @@ const Nav = () => {
                 key={index}
                 onMouseEnter={() => setHoveredLink(link.text)}
                 onMouseLeave={() => setHoveredLink(null)}
+                // Have to find a way to solve this
+                ref={text === "portfolio" ? portfolioRef : null} // Apply ref if link is 'Portfolio'
               >
                 {sublink ? (
                   <span className="text-white cursor-pointer">{text}</span>
