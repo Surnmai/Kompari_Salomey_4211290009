@@ -10,7 +10,7 @@ export const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
   const [bg, setBg] = useState(false);
-  const [mobileNav, setMobileNav] = useState(true);
+  const [mobileNav, setMobileNav] = useState(false);
 
   const closeMenuBar = () => {
     setMobileNav(false);
