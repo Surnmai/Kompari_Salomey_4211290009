@@ -28,7 +28,7 @@ const Navmobile = () => {
           mobileNav ? "left-0" : "-left-full"
         }  md:hidden fixed bottom-0 top-0 w-full max-w-xs h-screen transition-all bg-[#fff] shadow-xl shadow-slate-900 z-50`}
       >
-        <ul className="w-full h-full flex flex-col px-4 pt-8 gap-y-2 overflow-y-scroll">
+        <ul className="w-full h-full flex flex-col px-4 pt-0 gap-y-2 overflow-y-scroll">
           {navlinks.map((link, index) => {
             const { path, text, sublink } = link;
 
