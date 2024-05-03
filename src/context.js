@@ -16,17 +16,18 @@ export const AppContextProvider = ({ children }) => {
     setMobileNav(false);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      closeMenuBar();
-    };
+  // Close menubar on scroll
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     closeMenuBar();
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   // NavBar Background scroll
   useEffect(() => {
