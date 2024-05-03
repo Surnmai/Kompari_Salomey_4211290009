@@ -50,7 +50,7 @@ const Footer = () => {
 
           {/* copyright  */}
           <p className="copyright py-1 text-center">
-            &copy; {new Date().getFullYear()} Beads and Button - All rights
+            &copy; {new Date().getFullYear()} Beads and Buttons - All rights
             reserved.
           </p>
         </div>
