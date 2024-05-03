@@ -17,13 +17,6 @@ const Nav = () => {
   useEffect(() => {
     const handleClickOutside = (e) => {
       // console.log(e.target);
-      // if (
-      //   menuRef.current &&
-      //   !menuRef.current.contains(e.target) &&
-      //   !(portfolioRef.current && portfolioRef.current.contains(e.target))
-      // ) {
-      //   closeMenuBar();
-      // }
 
       if (
         menuRef.current &&
@@ -53,8 +46,8 @@ const Nav = () => {
                 key={index}
                 onMouseEnter={() => setHoveredLink(link.text)}
                 onMouseLeave={() => setHoveredLink(null)}
-                // Have to find a way to solve this
-                ref={text === "portfolio" ? portfolioRef : null} // Apply ref if link is 'Portfolio'
+
+                // ref={text === "portfolio" ? portfolioRef : null} // Apply ref if link is 'Portfolio'
               >
                 {sublink ? (
                   <span className="text-white cursor-pointer">{text}</span>

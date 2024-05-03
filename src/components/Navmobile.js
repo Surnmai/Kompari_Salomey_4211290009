@@ -12,7 +12,13 @@ const Navmobile = () => {
   // State to manage hover status
   const [hoveredLink, setHoveredLink] = useState(null);
 
-  const { mobileNav } = useGlobalContext();
+  const { mobileNav, portfolioRef, setMobileNav } = useGlobalContext();
+
+  const handlePortfolioClick = () => {
+    // Prevent menu bar from closing when "Portfolio" is clicked
+    setMobileNav(true);
+  };
+
   return (
     <>
       {/* <div
@@ -37,13 +43,19 @@ const Navmobile = () => {
                 key={index}
                 onClick={() => setHoveredLink(link.text)}
                 // onMouseLeave={() => setHoveredLink(null)}
+                ref={text === "portfolio" ? portfolioRef : null} // Apply ref if link is 'Portfolio'
                 className="border-b m-1 cursor-pointer capitalize font-medium"
               >
                 {sublink ? (
-                  <span className="text-[#000] cursor-pointer">{text}</span>
+                  <span
+                    className="text-[#000] cursor-pointer"
+                    // onClick={text === "portfolio" ? handlePortfolioClick : null} // Handle click on "Portfolio"
+                    onClick={handlePortfolioClick}
+                  >
+                    {text}
+                  </span>
                 ) : (
                   <Link className="text-[#000]" to={path}>
-                    {" "}
                     {text}
                   </Link>
                 )}
@@ -53,7 +65,11 @@ const Navmobile = () => {
                       const { text, path } = sub;
                       return (
                         <li key={index} className="px-4 py-1 border-b">
-                          <Link className="text-[#000]" to={path}>
+                          <Link
+                            className="text-[#000]"
+                            to={path}
+                            onClick={() => setMobileNav(false)} // Close menu bar when dropdown item is clicked
+                          >
                             {text}
                           </Link>
                         </li>
