@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Moodboard from "./pages/Moodboard";
+import Color_Pallete from "./pages/Color_Pallete";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/moodboard" element={<Moodboard />} />
+          <Route path="/color-pallete" element={<Color_Pallete />} />
         </Routes>
         <Footer />
       </Router>

@@ -17,7 +17,6 @@ export const navlinks = [
       { path: "/working-sketches", text: " working sketches" },
       { path: "/design-specifications", text: "design specifications" },
       { path: "/cutting-of-fabrics", text: "cutting of fabrics" },
-      { path: "/fabric-board", text: "fabric board" },
       { path: "/final-work", text: "final work" },
       { path: "/cost-sheet", text: "cost sheet" },
       { path: "/accessories", text: "accessories" },

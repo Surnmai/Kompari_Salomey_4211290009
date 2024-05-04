@@ -57,7 +57,7 @@ const Nav = () => {
                   </Link>
                 )}
                 {sublink && hoveredLink === text && (
-                  <ul className="absolute top-18 right-28 pt-1 bg-[#000] shadow-md shadow-slate-950 w-[15%]">
+                  <ul className="absolute top-18 right-[6%] pt-1 bg-[#000] shadow-md shadow-slate-950 w-[16%]">
                     {sublink.map((sub, index) => {
                       const { text, path } = sub;
                       return (
