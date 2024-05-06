@@ -9,6 +9,9 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Moodboard from "./pages/Moodboard";
 import ColorPallete from "./pages/Color_Pallete";
+import FabricBoard from "./pages/Fabric_board";
+import Flats from "./pages/Flats";
+import Croquis from "./pages/Croquis";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/moodboard" element={<Moodboard />} />
           <Route path="/color-pallete" element={<ColorPallete />} />
+          <Route path="/fabric-board" element={<FabricBoard />} />
+          <Route path="/flats" element={<Flats />} />
+          <Route path="/croquis" element={<Croquis />} />
         </Routes>
         <Footer />
       </Router>

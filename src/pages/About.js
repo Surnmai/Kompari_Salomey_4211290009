@@ -2,10 +2,15 @@ import React from "react";
 
 // import image
 import AboutImg from "../img/about.jpg";
+import AboutTop from "../img/abouttop.jpg";
+
+// import Components
+import TopBanner from "../components/TopBanner";
 
 const About = () => {
   return (
     <>
+      <TopBanner img={AboutTop} title="About" />
       <section className="section ">
         <div className="container mx-auto md:flex flex-wrap gap-8">
           {/* content  */}

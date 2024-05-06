@@ -21,4 +21,7 @@
   .section {
     @apply py-[5rem] lg:py-[9%];
   }
+  /* .swiper-wrapper {
+    @apply max-w-[1%];
+  } */
 }
