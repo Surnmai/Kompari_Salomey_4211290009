@@ -12,6 +12,7 @@ import ColorPallete from "./pages/Color_Pallete";
 import FabricBoard from "./pages/Fabric_board";
 import Flats from "./pages/Flats";
 import Croquis from "./pages/Croquis";
+import DesignBrief from "./pages/Design_brief";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/fabric-board" element={<FabricBoard />} />
           <Route path="/flats" element={<Flats />} />
           <Route path="/croquis" element={<Croquis />} />
+          <Route path="/design-brief" element={<DesignBrief />} />
         </Routes>
         <Footer />
       </Router>
