@@ -7,7 +7,7 @@ import ColorPaletteBanner from "../img/color pallete banner.jpg";
 // import Components
 import TopBanner from "../components/TopBanner";
 
-const Color_Pallete = () => {
+const Color_Palette = () => {
   return (
     <>
       <TopBanner img={ColorPaletteBanner} title="Color Palette" />
@@ -26,4 +26,4 @@ const Color_Pallete = () => {
   );
 };
 
-export default Color_Pallete;
+export default Color_Palette;

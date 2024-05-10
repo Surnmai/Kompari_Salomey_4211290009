@@ -8,11 +8,12 @@ import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Moodboard from "./pages/Moodboard";
-import ColorPallete from "./pages/Color_Pallete";
+import ColorPalette from "./pages/Color_Palette";
 import FabricBoard from "./pages/Fabric_board";
 import Flats from "./pages/Flats";
 import Croquis from "./pages/Croquis";
 import DesignBrief from "./pages/Design_brief";
+import PatterCharts from "./pages/Pattern_Charts";
 
 function App() {
   return (
@@ -24,11 +25,12 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/moodboard" element={<Moodboard />} />
-          <Route path="/color-pallete" element={<ColorPallete />} />
+          <Route path="/color-palette" element={<ColorPalette />} />
           <Route path="/fabric-board" element={<FabricBoard />} />
           <Route path="/flats" element={<Flats />} />
           <Route path="/croquis" element={<Croquis />} />
           <Route path="/design-brief" element={<DesignBrief />} />
+          <Route path="/patter-charts" element={<PatterCharts />} />
         </Routes>
         <Footer />
       </Router>
