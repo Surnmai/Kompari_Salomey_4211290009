@@ -13,7 +13,8 @@ import FabricBoard from "./pages/Fabric_board";
 import Flats from "./pages/Flats";
 import Croquis from "./pages/Croquis";
 import DesignBrief from "./pages/Design_brief";
-import PatterCharts from "./pages/Pattern_Charts";
+import WorkingSketches from "./pages/Working_sketches";
+import Pattern_Charts from "./pages/Pattern_Charts";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
           <Route path="/flats" element={<Flats />} />
           <Route path="/croquis" element={<Croquis />} />
           <Route path="/design-brief" element={<DesignBrief />} />
-          <Route path="/patter-charts" element={<PatterCharts />} />
+          <Route path="/working-sketches" element={<WorkingSketches />} />
+          <Route path="/pattern-charts" element={<Pattern_Charts />} />
         </Routes>
         <Footer />
       </Router>

@@ -14,7 +14,7 @@ const About = () => {
       <section className="section ">
         <div className="container mx-auto md:flex flex-wrap gap-8">
           {/* content  */}
-          <div className="flex-1 leading-5 text-justify ">
+          <div className="my-8 flex-1 leading-5 text-justify ">
             <p className="p-2">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Quibusdam eos quam cum, in asperiores animi delectus pariatur
@@ -81,7 +81,7 @@ const About = () => {
           </div>
 
           {/* image  */}
-          <div className="flex-1">
+          <div className="my-8 flex-1 shadow-md shadow-slate-950">
             <img src={AboutImg} alt="profile" className="w-full h-full" />
           </div>
         </div>
