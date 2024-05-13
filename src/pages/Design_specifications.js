@@ -83,7 +83,7 @@ const Design_specifications = () => {
           </div>
 
           {/* bottom  */}
-          <div>
+          <div className="mb-6">
             <div className="flex justify-center items-center gap-x-2">
               <p className="font-bold">Year of Manufacture:</p>
               <article>2024</article>
@@ -92,7 +92,7 @@ const Design_specifications = () => {
               <p className="font-bold">Division:</p>
               <article>Aamusted- Kumasi </article>
             </div>
-            <div className="flex justify-center items-center gap-x-2">
+            <div className="flex justify-center gap-x-2">
               <p className="font-bold">Department: </p>
               <article> Fashion and Textiles Design Education</article>
             </div>
