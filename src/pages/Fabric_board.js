@@ -43,14 +43,14 @@ const Fabric_board = () => {
             modules={[Autoplay]}
             className="max-w-96 max-h-max-w-96"
           >
-            <SwiperSlide>
+            <SwiperSlide className="rounded-md overflow-hidden">
               <img
                 src={FabricBoard1}
                 alt=""
                 className="w-full h-full object-cover"
               />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="rounded-md overflow-hidden">
               <img
                 src={FabricBoard}
                 alt=""

@@ -13,7 +13,7 @@ const Moodboard = () => {
       <TopBanner img={MoodBanner} title="Moodboard" />
       <section className="section">
         <div className="container mx-auto flex justify-center items-center">
-          <div className="w-[70%] h-[70%] shadow-md shadow-slate-950">
+          <div className="w-[70%] h-[70%] shadow-md shadow-slate-950 rounded-md overflow-hidden">
             <img
               src={MoodboardImg}
               alt=""

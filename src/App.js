@@ -14,7 +14,8 @@ import Flats from "./pages/Flats";
 import Croquis from "./pages/Croquis";
 import DesignBrief from "./pages/Design_brief";
 import WorkingSketches from "./pages/Working_sketches";
-import Pattern_Charts from "./pages/Pattern_Charts";
+import PatternCharts from "./pages/Pattern_Charts";
+import DesignSpecification from "./pages/Design_specifications";
 
 function App() {
   return (
@@ -32,7 +33,11 @@ function App() {
           <Route path="/croquis" element={<Croquis />} />
           <Route path="/design-brief" element={<DesignBrief />} />
           <Route path="/working-sketches" element={<WorkingSketches />} />
-          <Route path="/pattern-charts" element={<Pattern_Charts />} />
+          <Route path="/pattern-charts" element={<PatternCharts />} />
+          <Route
+            path="/design-specifications"
+            element={<DesignSpecification />}
+          />
         </Routes>
         <Footer />
       </Router>

@@ -13,7 +13,7 @@ const Croquis = () => {
       <TopBanner img={CroquisBanner} title="Croquis" />
       <section className="section">
         <div className="container mx-auto flex justify-center items-center ">
-          <div className="w-[30rem] shadow-md shadow-slate-950">
+          <div className="w-[30rem] shadow-md shadow-slate-950 rounded-md overflow-hidden">
             <img
               src={CroquisImg}
               alt=""

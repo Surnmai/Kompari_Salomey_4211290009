@@ -43,14 +43,14 @@ const Flats = () => {
             modules={[Autoplay]}
             className="max-w-96 max-h-max-w-96"
           >
-            <SwiperSlide>
+            <SwiperSlide className="rounded-md overflow-hidden">
               <img
                 src={FlastImg1}
                 alt=""
                 className="w-full h-full object-cover"
               />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="rounded-md overflow-hidden">
               <img
                 src={FlatsImg}
                 alt=""
