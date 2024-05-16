@@ -11,7 +11,7 @@ import TopBanner from "../components/TopBanner";
 const Drafting = () => {
   return (
     <>
-      <TopBanner img={DraftBanner} title="About" />
+      <TopBanner img={DraftBanner} title="Drafting" />
       <section className="section">
         <div className="container mx-auto flex flex-col md:flex-row gap-6 ">
           {/* img 1 */}

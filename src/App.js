@@ -17,6 +17,7 @@ import WorkingSketches from "./pages/Working_sketches";
 import PatternCharts from "./pages/Pattern_Charts";
 import DesignSpecification from "./pages/Design_specifications";
 import Drafting from "./pages/Drafting";
+import FinalWork from "./pages/Final_work";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             element={<DesignSpecification />}
           />
           <Route path="/drafting" element={<Drafting />} />
+          <Route path="/final-work" element={<FinalWork />} />
         </Routes>
         <Footer />
       </Router>
