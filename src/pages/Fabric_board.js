@@ -50,7 +50,7 @@ const Fabric_board = () => {
                 className="w-full h-full object-cover"
               />
             </SwiperSlide>
-            <SwiperSlide className="rounded-md overflow-hidden">
+            <SwiperSlide className="rounded-md overflow-hidden mb-6">
               <img
                 src={FabricBoard}
                 alt=""

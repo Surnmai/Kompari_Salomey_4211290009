@@ -59,7 +59,7 @@ const Cutting_of_fabrics = () => {
                 className="w-full h-full object-cover"
               />
             </SwiperSlide>
-            <SwiperSlide className="rounded-md overflow-hidden">
+            <SwiperSlide className="rounded-md overflow-hidden mb-6">
               <img
                 src={FabricCutting2}
                 alt=""
