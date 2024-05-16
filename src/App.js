@@ -18,6 +18,7 @@ import PatternCharts from "./pages/Pattern_Charts";
 import DesignSpecification from "./pages/Design_specifications";
 import Drafting from "./pages/Drafting";
 import FinalWork from "./pages/Final_work";
+import FabricCutting from "./pages/Cutting_of_fabrics";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           />
           <Route path="/drafting" element={<Drafting />} />
           <Route path="/final-work" element={<FinalWork />} />
+          <Route path="/cutting-of-fabrics" element={<FabricCutting />} />
         </Routes>
         <Footer />
       </Router>
