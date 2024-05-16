@@ -16,6 +16,7 @@ import DesignBrief from "./pages/Design_brief";
 import WorkingSketches from "./pages/Working_sketches";
 import PatternCharts from "./pages/Pattern_Charts";
 import DesignSpecification from "./pages/Design_specifications";
+import Drafting from "./pages/Drafting";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             path="/design-specifications"
             element={<DesignSpecification />}
           />
+          <Route path="/drafting" element={<Drafting />} />
         </Routes>
         <Footer />
       </Router>
