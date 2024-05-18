@@ -1,7 +1,10 @@
 export const navlinks = [
   { path: "/", text: "home" },
   { path: "/about", text: "about" },
-  { path: "/resume", text: "resume" },
+  {
+    path: "https://drive.google.com/file/d/1-ChbP6tyhuBL4pD_iMNNeY5bOaLauNSI/view?usp=sharing",
+    text: "resume",
+  },
   {
     path: "/portfolio",
     text: "portfolio",

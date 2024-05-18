@@ -1,8 +1,15 @@
 import React from "react";
 
+// import picture
+import ContactBanner from "../img/contactBanner.jpg";
+
+// import Components
+import TopBanner from "../components/TopBanner";
+
 const Contact = () => {
   return (
     <>
+      <TopBanner img={ContactBanner} title="Contact" />
       <section className="section">
         <div className="container mx-auto md:flex flex-wrap gap-6">
           {/* map  */}
