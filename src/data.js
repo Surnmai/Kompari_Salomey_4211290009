@@ -1,3 +1,6 @@
+// import PDF
+// import PDF from "./Docs/Sally's CV.pdf";
+
 export const navlinks = [
   { path: "/", text: "home" },
   { path: "/about", text: "about" },
