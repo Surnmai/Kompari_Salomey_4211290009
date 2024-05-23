@@ -41,7 +41,7 @@ const Flats = () => {
               clickable: true,
             }}
             modules={[Autoplay]}
-            className="max-w-96 max-h-max-w-96"
+            className="max-w-96 max-h-max-w-96 mb-6"
           >
             <SwiperSlide className="rounded-md overflow-hidden">
               <img

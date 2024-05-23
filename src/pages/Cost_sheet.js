@@ -137,7 +137,7 @@ const Cost_sheet = () => {
             </div>
           </div>
           {/* total cost  */}
-          <div className="md:flex gap-[26.4rem] px-[5.5rem] capitalize font-bold">
+          <div className="md:flex gap-[26.4rem] px-[5.5rem] capitalize font-bold mb-6">
             <h1>total cost</h1>
             <p>350.00</p>
           </div>

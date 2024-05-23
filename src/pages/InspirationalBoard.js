@@ -12,7 +12,7 @@ const InspirationalBoard = () => {
     <>
       <TopBanner img={InspirationalBoardBanner} title="Inspirational Board" />
       <section className="section">
-        <div className="container mx-auto flex justify-center items-center">
+        <div className="container mx-auto flex justify-center items-center mb-6">
           <div className="w-[50%] h-[50%] shadow-md shadow-slate-950 rounded-md overflow-hidden">
             <img
               src={InspirationalBoardImg}

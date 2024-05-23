@@ -36,7 +36,7 @@ const Pattern_Charts = () => {
           </div>
 
           {/* content  */}
-          <div className="text-center text-xl">
+          <div className="text-center text-xl mb-6">
             <h1 className="uppercase font-bold text-4xl mb-2">
               sewing instructions
             </h1>

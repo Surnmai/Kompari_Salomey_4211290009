@@ -12,7 +12,7 @@ const Color_Palette = () => {
     <>
       <TopBanner img={ColorPaletteBanner} title="Color Palette" />
       <section className="section">
-        <div className="container mx-auto flex justify-center items-center">
+        <div className="container mx-auto flex justify-center items-center mb-6">
           <div className="w-[70%] h-[70%]  rounded-md overflow-hidden">
             <img
               src={ColorPalleteImg}

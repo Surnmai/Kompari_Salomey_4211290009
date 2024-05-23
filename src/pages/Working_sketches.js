@@ -22,7 +22,7 @@ const Working_sketches = () => {
             </h1>
 
             {/* grid  */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="md:grid grid-cols-3 gap-4">
               {/* texts  */}
               <div>
                 <h1 className="font-bold uppercase">Threads</h1>
